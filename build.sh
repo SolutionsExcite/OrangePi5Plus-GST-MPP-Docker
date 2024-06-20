@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo docker build -t gst-hwa .
+sudo docker build -t orangepi5plus-gst-mpp .
