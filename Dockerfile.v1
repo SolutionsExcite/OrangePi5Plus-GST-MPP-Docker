@@ -1,0 +1,48 @@
+#
+# sudo docker build -t orangepi5plus-gst-mpp .
+FROM ubuntu:24.04
+
+# Install essential tools and libraries
+RUN apt-get update && apt-get install -y \
+    gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-gl gstreamer1.0-pulseaudio \
+    gstreamer1.0-libcamera gstreamer1.0-pipewire \
+    libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev \
+    libdrm-dev libudev-dev libv4l-dev libdrm2 \
+    cmake git build-essential \
+    pkg-config sudo meson flex bison ninja-build v4l-utils
+
+# Clone and install MPP (Multi-Media Processor) from Rockchip
+RUN git clone -b 1.0.6 --depth=1 https://github.com/rockchip-linux/mpp.git && \
+    cd mpp && \
+    mkdir builddir && cd builddir && \
+    cmake .. \
+        -DRKPLATFORM=ON \
+        -DHAVE_DRM=ON && \
+    make -j$(nproc) && \
+    make install && \
+    cd ../.. && rm -rf mpp
+
+# Clone and build GStreamer Rockchip plugins
+WORKDIR /src/rockchip-gstreamer
+RUN git clone --branch gstreamer-rockchip --depth=1 https://github.com/JeffyCN/mirrors.git \
+    && cd /src/rockchip-gstreamer/mirrors \
+    && meson setup builddir \
+    && ninja -C builddir \
+    && ninja install -C builddir \
+    && ldconfig
+
+# Set environment variables for GStreamer plugins
+ENV GST_PLUGIN_PATH=/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0
+
+# Set environment variables for runtime
+ENV LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/lib:/usr/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/libv4l/plugins:$LD_LIBRARY_PATH
+ENV GST_PLUGIN_PATH=/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/local/lib/gstreamer-1.0:/usr/lib/gstreamer-1.0:$GST_PLUGIN_PATH
+
+#ENV GST_DEBUG=3
+
+# Create directories for device files to be mounted
+#RUN mkdir -p /dev/dri /dev/rga /dev/mpp /dev/v4l
+
+# Entry point to the shell
+CMD ["/bin/bash"]

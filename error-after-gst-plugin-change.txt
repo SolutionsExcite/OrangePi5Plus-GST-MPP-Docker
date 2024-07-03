@@ -1,0 +1,463 @@
+(base) lenny@orangepi:~/dev/OrangePi5Plus-GST-MPP-Docker$ ./verify_build.sh
+
+** (gst-plugin-scanner:7): CRITICAL **: 21:41:19.204: gi.repository.Gst is no dict
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[7]: mpp_platform: client 12 driver is not ready!
+
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.296: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/Socket/Socket.so': /lib/aarch64-linux-gnu/perl-base/auto/Socket/Socket.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.297: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/Hash/Util/Util.so': /lib/aarch64-linux-gnu/perl-base/auto/Hash/Util/Util.so: undefined symbol: PL_sv_placeholder
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.297: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/Cwd/Cwd.so': /lib/aarch64-linux-gnu/perl-base/auto/Cwd/Cwd.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.298: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/List/Util/Util.so': /lib/aarch64-linux-gnu/perl-base/auto/List/Util/Util.so: undefined symbol: PL_memory_wrap
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.298: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/File/Glob/Glob.so': /lib/aarch64-linux-gnu/perl-base/auto/File/Glob/Glob.so: undefined symbol: PL_charclass
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.299: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/attributes/attributes.so': /lib/aarch64-linux-gnu/perl-base/auto/attributes/attributes.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.299: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/Fcntl/Fcntl.so': /lib/aarch64-linux-gnu/perl-base/auto/Fcntl/Fcntl.so: undefined symbol: Perl_croak_nocontext
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.300: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/IO/IO.so': /lib/aarch64-linux-gnu/perl-base/auto/IO/IO.so: undefined symbol: PL_ppaddr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.300: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/POSIX/POSIX.so': /lib/aarch64-linux-gnu/perl-base/auto/POSIX/POSIX.so: undefined symbol: PL_csighandler1p
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.301: Failed to load plugin '/lib/aarch64-linux-gnu/perl-base/auto/re/re.so': /lib/aarch64-linux-gnu/perl-base/auto/re/re.so: undefined symbol: Perl_regexec_flags
+
+Memory usage summary: heap total: 0, heap peak: 0, stack peak: 0
+         total calls   total memory   failed calls
+ malloc|          0              0              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.622: Failed to load plugin '/lib/aarch64-linux-gnu/caca/libgl_plugin.so': libglut.so.3.12: cannot open shared object file: No such file or directory
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.627: Failed to load plugin '/lib/aarch64-linux-gnu/hwloc/hwloc_pci.so': /lib/aarch64-linux-gnu/hwloc/hwloc_pci.so: undefined symbol: hwloc_topology_reconnect
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.629: Failed to load plugin '/lib/aarch64-linux-gnu/hwloc/hwloc_opencl.so': /lib/aarch64-linux-gnu/hwloc/hwloc_opencl.so: undefined symbol: hwloc_get_obj_by_depth
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.630: Failed to load plugin '/lib/aarch64-linux-gnu/hwloc/hwloc_gl.so': /lib/aarch64-linux-gnu/hwloc/hwloc_gl.so: undefined symbol: hwloc_get_obj_by_depth
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.632: Failed to load plugin '/lib/aarch64-linux-gnu/hwloc/hwloc_xml_libxml.so': /lib/aarch64-linux-gnu/hwloc/hwloc_xml_libxml.so: undefined symbol: hwloc__xml_export_diff
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.634: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Socket/Socket.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Socket/Socket.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.635: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Hash/Util/FieldHash/FieldHash.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Hash/Util/FieldHash/FieldHash.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.637: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Hash/Util/Util.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Hash/Util/Util.so: undefined symbol: PL_sv_placeholder
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.638: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/scalar/scalar.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/scalar/scalar.so: undefined symbol: PerlIOBase_binmode
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.639: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/encoding/encoding.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/encoding/encoding.so: undefined symbol: PerlIOBuf_open
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.641: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/mmap/mmap.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/mmap/mmap.so: undefined symbol: PerlIOBuf_pushed
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.642: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/via/via.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/PerlIO/via/via.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.644: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/IPC/SysV/SysV.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/IPC/SysV/SysV.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.645: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Time/Piece/Piece.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Time/Piece/Piece.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.646: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Time/HiRes/HiRes.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Time/HiRes/HiRes.so: undefined symbol: PL_ppaddr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.647: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Digest/MD5/MD5.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Digest/MD5/MD5.so: undefined symbol: Perl_sv_2uv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.649: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Digest/SHA/SHA.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Digest/SHA/SHA.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.650: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Cwd/Cwd.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Cwd/Cwd.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.652: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/B/B.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/B/B.so: undefined symbol: PL_No
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.654: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Filter/Util/Call/Call.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Filter/Util/Call/Call.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.655: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Devel/Peek/Peek.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Devel/Peek/Peek.so: undefined symbol: Perl_runops_debug
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.657: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/List/Util/Util.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/List/Util/Util.so: undefined symbol: PL_memory_wrap
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.658: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Opcode/Opcode.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Opcode/Opcode.so: undefined symbol: PL_op_name
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.659: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Storable/Storable.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Storable/Storable.so: undefined symbol: PL_No
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.661: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/GDBM_File/GDBM_File.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/GDBM_File/GDBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.662: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/MIME/Base64/Base64.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/MIME/Base64/Base64.so: undefined symbol: PL_charclass
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.663: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Sys/Syslog/Syslog.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Sys/Syslog/Syslog.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.665: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Sys/Hostname/Hostname.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Sys/Hostname/Hostname.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.676: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/CN/CN.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/CN/CN.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.680: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Byte/Byte.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Byte/Byte.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.694: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/KR/KR.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/KR/KR.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.695: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Symbol/Symbol.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Symbol/Symbol.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.696: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Encode.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Encode.so: undefined symbol: PL_strict_utf8_dfa_tab
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.713: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/JP/JP.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/JP/JP.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.715: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/EBCDIC/EBCDIC.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/EBCDIC/EBCDIC.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.726: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/TW/TW.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/TW/TW.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.728: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Unicode/Unicode.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Encode/Unicode/Unicode.so: undefined symbol: PL_strict_utf8_dfa_tab
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.730: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/NDBM_File/NDBM_File.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/NDBM_File/NDBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.732: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/File/Glob/Glob.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/File/Glob/Glob.so: undefined symbol: PL_charclass
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.733: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/File/DosGlob/DosGlob.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/File/DosGlob/DosGlob.so: undefined symbol: Perl_newXS_deffile
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.735: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/attributes/attributes.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/attributes/attributes.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.736: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/DB_File/DB_File.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/DB_File/DB_File.so: undefined symbol: Perl_mg_get
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.737: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Data/Dumper/Dumper.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Data/Dumper/Dumper.so: undefined symbol: PL_No
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.738: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Compress/Raw/Bzip2/Bzip2.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Compress/Raw/Bzip2/Bzip2.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.740: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Compress/Raw/Zlib/Zlib.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Compress/Raw/Zlib/Zlib.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.740: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/threads/threads.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/threads/threads.so: undefined symbol: PL_thr_key
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.741: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/threads/shared/shared.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/threads/shared/shared.so: undefined symbol: PL_thr_key
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.742: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Math/BigInt/FastCalc/FastCalc.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Math/BigInt/FastCalc/FastCalc.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.744: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Fcntl/Fcntl.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Fcntl/Fcntl.so: undefined symbol: Perl_croak_nocontext
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.745: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/mro/mro.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/mro/mro.so: undefined symbol: PL_memory_wrap
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.747: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/I18N/Langinfo/Langinfo.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/I18N/Langinfo/Langinfo.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.748: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/IO/IO.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/IO/IO.so: undefined symbol: PL_ppaddr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.750: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/POSIX/POSIX.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/POSIX/POSIX.so: undefined symbol: PL_csighandler1p
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.752: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/re/re.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/re/re.so: undefined symbol: Perl_regexec_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.754: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/ODBM_File/ODBM_File.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/ODBM_File/ODBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.762: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Unicode/Collate/Collate.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Unicode/Collate/Collate.so: undefined symbol: PL_hexdigit
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.768: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/Unicode/Normalize/Normalize.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/Unicode/Normalize/Normalize.so: undefined symbol: PL_strict_utf8_dfa_tab
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.769: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38.2/auto/SDBM_File/SDBM_File.so': /lib/aarch64-linux-gnu/perl/5.38.2/auto/SDBM_File/SDBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.770: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Socket/Socket.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Socket/Socket.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.771: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Hash/Util/FieldHash/FieldHash.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Hash/Util/FieldHash/FieldHash.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.771: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Hash/Util/Util.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Hash/Util/Util.so: undefined symbol: PL_sv_placeholder
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.772: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/scalar/scalar.so': /lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/scalar/scalar.so: undefined symbol: PerlIOBase_binmode
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.772: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/encoding/encoding.so': /lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/encoding/encoding.so: undefined symbol: PerlIOBuf_open
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.773: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/mmap/mmap.so': /lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/mmap/mmap.so: undefined symbol: PerlIOBuf_pushed
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.774: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/via/via.so': /lib/aarch64-linux-gnu/perl/5.38/auto/PerlIO/via/via.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.774: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/IPC/SysV/SysV.so': /lib/aarch64-linux-gnu/perl/5.38/auto/IPC/SysV/SysV.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.775: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Time/Piece/Piece.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Time/Piece/Piece.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.775: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Time/HiRes/HiRes.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Time/HiRes/HiRes.so: undefined symbol: PL_ppaddr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.776: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Digest/MD5/MD5.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Digest/MD5/MD5.so: undefined symbol: Perl_sv_2uv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.776: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Digest/SHA/SHA.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Digest/SHA/SHA.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.777: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Cwd/Cwd.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Cwd/Cwd.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.778: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/B/B.so': /lib/aarch64-linux-gnu/perl/5.38/auto/B/B.so: undefined symbol: PL_No
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.778: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Filter/Util/Call/Call.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Filter/Util/Call/Call.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.779: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Devel/Peek/Peek.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Devel/Peek/Peek.so: undefined symbol: Perl_runops_debug
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.779: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/List/Util/Util.so': /lib/aarch64-linux-gnu/perl/5.38/auto/List/Util/Util.so: undefined symbol: PL_memory_wrap
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.780: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Opcode/Opcode.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Opcode/Opcode.so: undefined symbol: PL_op_name
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.780: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Storable/Storable.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Storable/Storable.so: undefined symbol: PL_No
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.781: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/GDBM_File/GDBM_File.so': /lib/aarch64-linux-gnu/perl/5.38/auto/GDBM_File/GDBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.782: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/MIME/Base64/Base64.so': /lib/aarch64-linux-gnu/perl/5.38/auto/MIME/Base64/Base64.so: undefined symbol: PL_charclass
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.782: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Sys/Syslog/Syslog.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Sys/Syslog/Syslog.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.783: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Sys/Hostname/Hostname.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Sys/Hostname/Hostname.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.784: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/CN/CN.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/CN/CN.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.785: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Byte/Byte.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Byte/Byte.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.787: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/KR/KR.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/KR/KR.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.787: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Symbol/Symbol.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Symbol/Symbol.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.788: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Encode.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Encode.so: undefined symbol: PL_strict_utf8_dfa_tab
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.790: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/JP/JP.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/JP/JP.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.791: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/EBCDIC/EBCDIC.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/EBCDIC/EBCDIC.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.792: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/TW/TW.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/TW/TW.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.793: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Unicode/Unicode.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Encode/Unicode/Unicode.so: undefined symbol: PL_strict_utf8_dfa_tab
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.794: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/NDBM_File/NDBM_File.so': /lib/aarch64-linux-gnu/perl/5.38/auto/NDBM_File/NDBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.795: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/File/Glob/Glob.so': /lib/aarch64-linux-gnu/perl/5.38/auto/File/Glob/Glob.so: undefined symbol: PL_charclass
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.795: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/File/DosGlob/DosGlob.so': /lib/aarch64-linux-gnu/perl/5.38/auto/File/DosGlob/DosGlob.so: undefined symbol: Perl_newXS_deffile
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.796: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/attributes/attributes.so': /lib/aarch64-linux-gnu/perl/5.38/auto/attributes/attributes.so: undefined symbol: Perl_stack_grow
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.796: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/DB_File/DB_File.so': /lib/aarch64-linux-gnu/perl/5.38/auto/DB_File/DB_File.so: undefined symbol: Perl_mg_get
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.797: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Data/Dumper/Dumper.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Data/Dumper/Dumper.so: undefined symbol: PL_No
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.798: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Compress/Raw/Bzip2/Bzip2.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Compress/Raw/Bzip2/Bzip2.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.798: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Compress/Raw/Zlib/Zlib.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Compress/Raw/Zlib/Zlib.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.799: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/threads/threads.so': /lib/aarch64-linux-gnu/perl/5.38/auto/threads/threads.so: undefined symbol: PL_thr_key
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.799: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/threads/shared/shared.so': /lib/aarch64-linux-gnu/perl/5.38/auto/threads/shared/shared.so: undefined symbol: PL_thr_key
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.800: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Math/BigInt/FastCalc/FastCalc.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Math/BigInt/FastCalc/FastCalc.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.801: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Fcntl/Fcntl.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Fcntl/Fcntl.so: undefined symbol: Perl_croak_nocontext
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.801: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/mro/mro.so': /lib/aarch64-linux-gnu/perl/5.38/auto/mro/mro.so: undefined symbol: PL_memory_wrap
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.802: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/I18N/Langinfo/Langinfo.so': /lib/aarch64-linux-gnu/perl/5.38/auto/I18N/Langinfo/Langinfo.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.802: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/IO/IO.so': /lib/aarch64-linux-gnu/perl/5.38/auto/IO/IO.so: undefined symbol: PL_ppaddr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.803: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/POSIX/POSIX.so': /lib/aarch64-linux-gnu/perl/5.38/auto/POSIX/POSIX.so: undefined symbol: PL_csighandler1p
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.804: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/re/re.so': /lib/aarch64-linux-gnu/perl/5.38/auto/re/re.so: undefined symbol: Perl_regexec_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.805: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/ODBM_File/ODBM_File.so': /lib/aarch64-linux-gnu/perl/5.38/auto/ODBM_File/ODBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.806: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Unicode/Collate/Collate.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Unicode/Collate/Collate.so: undefined symbol: PL_hexdigit
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.807: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/Unicode/Normalize/Normalize.so': /lib/aarch64-linux-gnu/perl/5.38/auto/Unicode/Normalize/Normalize.so: undefined symbol: PL_strict_utf8_dfa_tab
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.808: Failed to load plugin '/lib/aarch64-linux-gnu/perl/5.38/auto/SDBM_File/SDBM_File.so': /lib/aarch64-linux-gnu/perl/5.38/auto/SDBM_File/SDBM_File.so: undefined symbol: Perl_save_sptr
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.849: Failed to load plugin '/lib/aarch64-linux-gnu/libc.so': /lib/aarch64-linux-gnu/libc.so: invalid ELF header
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.882: Failed to load plugin '/lib/aarch64-linux-gnu/perl5/5.38/auto/Locale/gettext/gettext.so': /lib/aarch64-linux-gnu/perl5/5.38/auto/Locale/gettext/gettext.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.883: Failed to load plugin '/lib/aarch64-linux-gnu/perl5/5.38/auto/File/FcntlLock/FcntlLock.so': /lib/aarch64-linux-gnu/perl5/5.38/auto/File/FcntlLock/FcntlLock.so: undefined symbol: Perl_sv_2iv_flags
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.885: Failed to load plugin '/lib/aarch64-linux-gnu/perl5/5.38/auto/Algorithm/Diff/XS/XS.so': /lib/aarch64-linux-gnu/perl5/5.38/auto/Algorithm/Diff/XS/XS.so: undefined symbol: Perl_sv_setref_pv
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:20.923: Failed to load plugin '/lib/aarch64-linux-gnu/libunwind-coredump.so': /lib/aarch64-linux-gnu/libunwind-coredump.so: undefined symbol: _Uaarch64_dwarf_search_unwind_table
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.366: Failed to load plugin '/lib/aarch64-linux-gnu/systemd/libsystemd-core-255.so': libsystemd-shared-255.so: cannot open shared object file: No such file or directory
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.384: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_fcoll_dynamic_gen2.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.437: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_btl_tcp.so': /lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_btl_tcp.so: undefined symbol: opal_process_info
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.444: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_sharedfp_individual.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.459: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_pml_ob1.so': /lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_pml_ob1.so: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.507: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_fcoll_dynamic.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.526: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_fcoll_vulcan.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.529: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_fcoll_individual.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.580: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_coll_adapt.so': /lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_coll_adapt.so: undefined symbol: opal_free_list_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.595: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_coll_han.so': /lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_coll_han.so: undefined symbol: ompi_request_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.597: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_sharedfp_lockedfile.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.625: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_fcoll_two_phase.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.629: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_io_ompio.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.652: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_io_romio321.so': /lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_io_romio321.so: undefined symbol: ompi_mpi_comm_world
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:21.679: Failed to load plugin '/lib/aarch64-linux-gnu/openmpi/lib/openmpi3/mca_sharedfp_sm.so': /usr/lib/aarch64-linux-gnu/libmca_common_ompio.so.41: undefined symbol: opal_convertor_t_class
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:22.639: Failed to load plugin '/lib/aarch64-linux-gnu/libunwind-ptrace.so': /lib/aarch64-linux-gnu/libunwind-ptrace.so: undefined symbol: _Uaarch64_dwarf_search_unwind_table
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:22.650: Failed to load plugin '/lib/aarch64-linux-gnu/ogdi/4.1/libecs_tcl.so': /lib/aarch64-linux-gnu/ogdi/4.1/libecs_tcl.so: undefined symbol: Tcl_AppendResult
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:22.787: Failed to load plugin '/lib/aarch64-linux-gnu/libm.so': /lib/aarch64-linux-gnu/libm.so: invalid ELF header
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:22.798: Failed to load plugin '/lib/aarch64-linux-gnu/libthread_db.so': /lib/aarch64-linux-gnu/libthread_db.so: undefined symbol: ps_pdwrite
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:23.231: Failed to load plugin '/lib/aarch64-linux-gnu/libfl.so': /lib/aarch64-linux-gnu/libfl.so: undefined symbol: yylex
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:23.304: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/libgcc_s.so': /lib/gcc/aarch64-linux-gnu/13/libgcc_s.so: invalid ELF header
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:23.308: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/plugin/libcc1plugin.so': /lib/gcc/aarch64-linux-gnu/13/plugin/libcc1plugin.so: undefined symbol: integer_types
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:23.310: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/plugin/libcp1plugin.so': /lib/gcc/aarch64-linux-gnu/13/plugin/libcp1plugin.so: undefined symbol: ovl_op_mapping
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:23.314: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/libtsan.so': /lib/gcc/aarch64-linux-gnu/13/libtsan.so: cannot allocate memory in static TLS block
+
+(gst-plugin-scanner:7): GStreamer-WARNING **: 21:41:23.315: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/liblsan.so': /lib/gcc/aarch64-linux-gnu/13/liblsan.so: cannot allocate memory in static TLS block
+==7==ASan runtime does not come first in initial library list; you should either link runtime to your application or manually preload it with LD_PRELOAD.
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.147: Failed to load plugin '/lib/aarch64-linux-gnu/libfl.so': /lib/aarch64-linux-gnu/libfl.so: undefined symbol: yylex
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.232: Failed to load plugin '/lib/python3/dist-packages/_dbus_bindings.cpython-312-aarch64-linux-gnu.so': /lib/python3/dist-packages/_dbus_bindings.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_KeyboardInterrupt
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.232: Failed to load plugin '/lib/python3/dist-packages/gi/_gi.cpython-312-aarch64-linux-gnu.so': /lib/python3/dist-packages/gi/_gi.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_NotImplementedError
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.232: Failed to load plugin '/lib/python3/dist-packages/_dbus_glib_bindings.cpython-312-aarch64-linux-gnu.so': /lib/python3/dist-packages/_dbus_glib_bindings.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_RuntimeError
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.362: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/libgcc_s.so': /lib/gcc/aarch64-linux-gnu/13/libgcc_s.so: invalid ELF header
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.363: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/plugin/libcc1plugin.so': /lib/gcc/aarch64-linux-gnu/13/plugin/libcc1plugin.so: undefined symbol: integer_types
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.363: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/plugin/libcp1plugin.so': /lib/gcc/aarch64-linux-gnu/13/plugin/libcp1plugin.so: undefined symbol: ovl_op_mapping
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.364: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/libtsan.so': /lib/gcc/aarch64-linux-gnu/13/libtsan.so: cannot allocate memory in static TLS block
+
+(gst-plugin-scanner:20): GStreamer-WARNING **: 21:41:24.365: Failed to load plugin '/lib/gcc/aarch64-linux-gnu/13/liblsan.so': /lib/gcc/aarch64-linux-gnu/13/liblsan.so: cannot allocate memory in static TLS block
+==20==ASan runtime does not come first in initial library list; you should either link runtime to your application or manually preload it with LD_PRELOAD.
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.396: Failed to load plugin '/lib/python3.12/lib-dynload/_crypt.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_crypt.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.397: Failed to load plugin '/lib/python3.12/lib-dynload/_posixshmem.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_posixshmem.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.398: Failed to load plugin '/lib/python3.12/lib-dynload/_queue.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_queue.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.398: Failed to load plugin '/lib/python3.12/lib-dynload/_lzma.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_lzma.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_MemoryError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.399: Failed to load plugin '/lib/python3.12/lib-dynload/_testclinic.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testclinic.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyFloat_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.400: Failed to load plugin '/lib/python3.12/lib-dynload/_xxtestfuzz.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_xxtestfuzz.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_RecursionError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.401: Failed to load plugin '/lib/python3.12/lib-dynload/_curses_panel.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_curses_panel.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_TrueStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.402: Failed to load plugin '/lib/python3.12/lib-dynload/_xxinterpchannels.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_xxinterpchannels.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_TrueStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.403: Failed to load plugin '/lib/python3.12/lib-dynload/_testbuffer.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testbuffer.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyFloat_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.404: Failed to load plugin '/lib/python3.12/lib-dynload/audioop.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/audioop.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyFloat_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.405: Failed to load plugin '/lib/python3.12/lib-dynload/readline.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/readline.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyOS_InputHook
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.407: Failed to load plugin '/lib/python3.12/lib-dynload/_codecs_jp.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_codecs_jp.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_TypeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.409: Failed to load plugin '/lib/python3.12/lib-dynload/_curses.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_curses.cpython-312-aarch64-linux-gnu.so: undefined symbol: _PyRuntime
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.410: Failed to load plugin '/lib/python3.12/lib-dynload/xxsubtype.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/xxsubtype.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.411: Failed to load plugin '/lib/python3.12/lib-dynload/_codecs_iso2022.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_codecs_iso2022.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.411: Failed to load plugin '/lib/python3.12/lib-dynload/_ctypes_test.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_ctypes_test.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.412: Failed to load plugin '/lib/python3.12/lib-dynload/_xxsubinterpreters.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_xxsubinterpreters.cpython-312-aarch64-linux-gnu.so: undefined symbol: _PyInterpreterID_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.413: Failed to load plugin '/lib/python3.12/lib-dynload/_lsprof.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_lsprof.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyModule_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.413: Failed to load plugin '/lib/python3.12/lib-dynload/_testimportmultiple.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testimportmultiple.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyModule_Create2
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.414: Failed to load plugin '/lib/python3.12/lib-dynload/ossaudiodev.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/ossaudiodev.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.415: Failed to load plugin '/lib/python3.12/lib-dynload/_codecs_tw.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_codecs_tw.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_TypeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.417: Failed to load plugin '/lib/python3.12/lib-dynload/_multibytecodec.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_multibytecodec.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_RuntimeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.417: Failed to load plugin '/lib/python3.12/lib-dynload/_testsinglephase.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testsinglephase.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.418: Failed to load plugin '/lib/python3.12/lib-dynload/_multiprocessing.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_multiprocessing.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_RuntimeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.418: Failed to load plugin '/lib/python3.12/lib-dynload/_asyncio.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_asyncio.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyTraceBack_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.419: Failed to load plugin '/lib/python3.12/lib-dynload/_contextvars.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_contextvars.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyContextVar_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.419: Failed to load plugin '/lib/python3.12/lib-dynload/_hashlib.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_hashlib.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.421: Failed to load plugin '/lib/python3.12/lib-dynload/_sqlite3.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_sqlite3.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyFloat_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.421: Failed to load plugin '/lib/python3.12/lib-dynload/_json.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_json.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_TrueStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.423: Failed to load plugin '/lib/python3.12/lib-dynload/_decimal.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_decimal.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyFloat_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.424: Failed to load plugin '/lib/python3.12/lib-dynload/_codecs_cn.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_codecs_cn.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_TypeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.426: Failed to load plugin '/lib/python3.12/lib-dynload/_codecs_hk.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_codecs_hk.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.427: Failed to load plugin '/lib/python3.12/lib-dynload/resource.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/resource.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.428: Failed to load plugin '/lib/python3.12/lib-dynload/_testmultiphase.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testmultiphase.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.429: Failed to load plugin '/lib/python3.12/lib-dynload/_dbm.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_dbm.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_OSError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.429: Failed to load plugin '/lib/python3.12/lib-dynload/_bz2.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_bz2.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_SystemError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.430: Failed to load plugin '/lib/python3.12/lib-dynload/termios.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/termios.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_TypeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.431: Failed to load plugin '/lib/python3.12/lib-dynload/xxlimited.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/xxlimited.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.432: Failed to load plugin '/lib/python3.12/lib-dynload/_ssl.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_ssl.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_ValueError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.433: Failed to load plugin '/lib/python3.12/lib-dynload/_testinternalcapi.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testinternalcapi.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_NotImplementedError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.434: Failed to load plugin '/lib/python3.12/lib-dynload/_codecs_kr.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_codecs_kr.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_TypeError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.440: Failed to load plugin '/lib/python3.12/lib-dynload/_ctypes.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_ctypes.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyTuple_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.441: Failed to load plugin '/lib/python3.12/lib-dynload/mmap.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/mmap.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_BufferError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.442: Failed to load plugin '/lib/python3.12/lib-dynload/_testcapi.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_testcapi.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyExc_SystemError
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.443: Failed to load plugin '/lib/python3.12/lib-dynload/_zoneinfo.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/_zoneinfo.cpython-312-aarch64-linux-gnu.so: undefined symbol: PyTuple_Type
+
+(gst-plugin-scanner:21): GStreamer-WARNING **: 21:41:24.444: Failed to load plugin '/lib/python3.12/lib-dynload/xxlimited_35.cpython-312-aarch64-linux-gnu.so': /lib/python3.12/lib-dynload/xxlimited_35.cpython-312-aarch64-linux-gnu.so: undefined symbol: _Py_NoneStruct
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_platform: client 12 driver is not ready!
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+Setting pipeline to PAUSED ...
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+Pipeline is live and does not need PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+ERROR: from element /GstPipeline:pipeline0/GstV4l2Src:v4l2src0: Device '/dev/video0' has no supported format
+Additional debug info:
+../subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c(4399): gst_v4l2_object_set_format_full (): /GstPipeline:pipeline0/GstV4l2Src:v4l2src0:
+Call to TRY_FMT failed for NV12 @ 1920x1080: Invalid argument
+Execution ended after 0:00:00.008549592
+Setting pipeline to NULL ...
+ERROR: from element /GstPipeline:pipeline0/GstV4l2Src:v4l2src0: Internal data stream error.
+Additional debug info:
+../libs/gst/base/gstbasesrc.c(3177): gst_base_src_loop (): /GstPipeline:pipeline0/GstV4l2Src:v4l2src0:
+streaming stopped, reason not-negotiated (-4)
+Freeing pipeline ...

@@ -15,13 +15,5 @@ RUN apt-get update && apt-get install -y \
     gstreamer1.0-pipewire \
     && rm -rf /var/cache/apt/*
 
-# Copy additional files from local context
-COPY libfiles/lib /lib
-COPY libfiles/usr/lib/aarch64-linux-gnu /usr/lib/aarch64-linux-gnu
-
-# Set environment variables for runtime
-ENV LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/lib:/usr/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/libv4l/plugins:${LD_LIBRARY_PATH:-}
-ENV GST_PLUGIN_PATH=/usr/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/local/lib/gstreamer-1.0:/usr/lib/gstreamer-1.0:${GST_PLUGIN_PATH:-}
-
 CMD ["/bin/bash"]
     

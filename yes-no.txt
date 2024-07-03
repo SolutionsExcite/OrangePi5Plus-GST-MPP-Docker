@@ -1,0 +1,80 @@
+# this is what it looks like when the container works 
+(base) lenny@orangepi:~/dev/OrangePi5Plus-GST-MPP-Docker$ ./verify_build.sh
+mpp[8]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[8]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[8]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[8]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[1]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[1]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[1]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+mpp[1]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+Setting pipeline to PAUSED ...
+mpp[1]: mpp_info: mpp version: unknown mpp version for missing VCS info
+
+Pipeline is live and does not need PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+mpp[1]: mpp_enc: MPP_ENC_SET_RC_CFG bps 15552000 [14580000 : 16524000] fps [60:60] gop 60
+
+mpp[1]: h265e_api: h265e_proc_prep_cfg MPP_ENC_SET_PREP_CFG w:h [1920:1080] stride [1920:1088]
+
+mpp[1]: mpp_enc: mode cbr bps [14580000:15552000:16524000] fps fix [60/1] -> fix [60/1] gop i [60] v [0]
+
+rga_api version 1.10.0_[8]
+Redistribute latency...
+Redistribute latency...
+0:00:10.5 / 99:99:99.
+
+
+
+
+
+# This is what it looks like currently not working with building manually
+(base) lenny@orangepi:~/dev/OrangePi5Plus-GST-MPP-Docker$ ./verify_build.sh
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[7]: mpp_platform: client 12 driver is not ready!
+
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[7]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_platform: client 12 driver is not ready!
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+Setting pipeline to PAUSED ...
+mpp[1]: mpp_info: mpp version: 239e15e author: Herman Chen    2024-06-12 docs: Update 1.0.6 CHANGELOG.md
+
+Pipeline is live and does not need PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+ERROR: from element /GstPipeline:pipeline0/GstV4l2Src:v4l2src0: Device '/dev/video0' has no supported format
+Additional debug info:
+../sys/v4l2/gstv4l2object.c(4399): gst_v4l2_object_set_format_full (): /GstPipeline:pipeline0/GstV4l2Src:v4l2src0:
+Call to TRY_FMT failed for NV24 @ 1920x1080: Invalid argument
+Execution ended after 0:00:00.008868544
+Setting pipeline to NULL ...
+ERROR: from element /GstPipeline:pipeline0/GstV4l2Src:v4l2src0: Internal data stream error.
+Additional debug info:
+../libs/gst/base/gstbasesrc.c(3177): gst_base_src_loop (): /GstPipeline:pipeline0/GstV4l2Src:v4l2src0:
+streaming stopped, reason not-negotiated (-4)
+Freeing pipeline ...

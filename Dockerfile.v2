@@ -1,0 +1,131 @@
+# sudo docker build -t orangepi5plus-gst-mpp .
+FROM ubuntu:24.04
+
+# Install essential base packages
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    meson \
+    ninja-build \
+    autoconf \
+    automake \
+    libtool \
+    pkg-config \
+    git \
+    python3 python3-pip \
+    libdrm-dev \
+    libudev-dev \
+    libv4l-dev \
+    libjpeg-dev \
+    libx11-dev \
+    libegl1-mesa-dev \
+    libwayland-dev \
+    libxrandr-dev \
+    libxv-dev \
+    libffi-dev \
+    libass-dev \
+    libva-dev \
+    yasm \
+    nasm \
+    wget \
+    bison \
+    flex \
+    gstreamer1.0-tools \
+    libgstreamer1.0-dev \
+    libgstreamer-plugins-base1.0-dev \
+    libgstreamer-plugins-good1.0-dev \
+    libgstreamer-plugins-bad1.0-dev \
+    libdrm2 \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-ugly \
+    gstreamer1.0-libav \
+    gstreamer1.0-gl \
+    gstreamer1.0-pulseaudio \
+    gstreamer1.0-libcamera \
+    gstreamer1.0-pipewire \
+    v4l-utils \
+    libxml2-dev \
+    libcairo2-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set environment variables
+ENV LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/lib:/usr/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/libv4l/plugins:$LD_LIBRARY_PATH
+ENV GST_PLUGIN_PATH=/usr/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/local/lib/gstreamer-1.0:/usr/lib/gstreamer-1.0:$GST_PLUGIN_PATH
+
+# Define versions
+ENV ROCKCHIP_MPP_VERSION=1.0.6
+ENV GST_VERSION=1.24.2
+ENV FFMPEG_VERSION=5.1
+
+# Clone and build Rockchip MPP
+WORKDIR /src/rockchip-mpp
+RUN git clone --depth=1 https://github.com/rockchip-linux/mpp.git -b ${ROCKCHIP_MPP_VERSION} \
+    && cd mpp \
+    && mkdir builddir && cd builddir \
+    && cmake -DRKPLATFORM=ON -DHAVE_DRM=ON .. \
+    && make -j$(nproc) \
+    && make install
+
+# Update library path
+ENV LD_LIBRARY_PATH=/usr/local/mpp/lib:${LD_LIBRARY_PATH}
+
+# Clone and build GStreamer
+WORKDIR /src/gstreamer
+RUN git clone https://gitlab.freedesktop.org/gstreamer/gstreamer.git -b ${GST_VERSION} \
+    && cd gstreamer \
+    && meson setup builddir \
+    && meson compile -C builddir \
+    && meson install -C builddir
+
+# Clone and build GStreamer Rockchip plugins
+WORKDIR /src/rockchip-gstreamer
+RUN git clone --branch gstreamer-rockchip --depth=1 https://github.com/JeffyCN/mirrors.git \
+    && cd mirrors \
+    && meson setup builddir \
+    && ninja -C builddir \
+    && ninja install -C builddir
+
+# Install additional dependencies for V4L2 utilities and build
+RUN apt-get update && apt-get install -y \
+    ninja-build libv4l-dev debhelper doxygen gcc git \
+    graphviz libasound2-dev libjpeg-dev libqt5opengl5-dev libudev-dev libx11-dev meson pkg-config \
+    qtbase5-dev udev libsdl2-dev libbpf-dev sudo
+
+# Clone and build V4L2 utilities with the required patch
+WORKDIR /src/v4l-utils
+RUN git clone --depth=1 https://git.linuxtv.org/v4l-utils.git \
+    && cd v4l-utils \
+    && wget https://github.com/JeffyCN/meta-rockchip/raw/release-1.3.0_20200915/recipes-multimedia/v4l2apps/v4l-utils/0001-libv4l2-Support-mmap-to-libv4l-plugin.patch \
+    && git apply 0001-libv4l2-Support-mmap-to-libv4l-plugin.patch \
+    && meson setup builddir \
+    && ninja -C builddir \
+    && ninja install -C builddir
+
+# Clone and build libv4l-rkmpp
+WORKDIR /src/libv4l-rkmpp
+RUN git clone --depth=1 https://github.com/JeffyCN/libv4l-rkmpp.git \
+    && cd libv4l-rkmpp \
+    && meson setup builddir \
+    && ninja -C builddir \
+    && mkdir -p  /usr/lib/libv4l/plugins/ \
+    && cp builddir/libv4l-rkmpp.so /usr/lib/libv4l/plugins/
+
+# Set environment variables for runtime
+ENV LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/lib:/usr/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/libv4l/plugins:$LD_LIBRARY_PATH
+ENV GST_PLUGIN_PATH=/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/local/lib/gstreamer-1.0:/usr/lib/gstreamer-1.0:$GST_PLUGIN_PATH
+
+COPY check_libs.sh check_libs.sh
+
+
+# Copy additional files from local context
+#COPY libfiles/lib /lib
+#COPY libfiles/usr/lib/aarch64-linux-gnu /usr/lib/aarch64-linux-gnu
+
+# Set environment variables for runtime
+ENV LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/lib:/usr/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu/libv4l/plugins:${LD_LIBRARY_PATH:-}
+ENV GST_PLUGIN_PATH=/usr/lib/aarch64-linux-gnu/gstreamer-1.0:/usr/local/lib/gstreamer-1.0:/usr/lib/gstreamer-1.0:${GST_PLUGIN_PATH:-}
+
+# Set entrypoint or default command
+CMD ["/bin/bash"]
